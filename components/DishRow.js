@@ -23,7 +23,7 @@ export default function DishRow( {id, name, description, price,image} ) {
       <>
     <TouchableOpacity
         onPress={()=> setIsPressed(!isPressed)}
-        className="bg-white border p-4 border-gray-200">
+        className="bg-amber-50 border p-4 border-gray-200">
         <View className="flex-row">
         <View className="flex-1 pr-2">
             <Text className="text-lg mb-1">{name}</Text>
@@ -43,7 +43,7 @@ export default function DishRow( {id, name, description, price,image} ) {
         </View>
 </TouchableOpacity>
           {isPressed && (
-              <View className="bg-white px-4">
+              <View className="bg-amber-50 px-4">
                   <View className="flex-row items-center space-x-2 pb-3">
                       <TouchableOpacity>
                           <MinusCircleIcon

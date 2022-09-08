@@ -49,8 +49,8 @@ export default function DeliveryScreen() {
             showsUserLocation={true}
 
             initialRegion={{
-                latitude: restaurant.lat,
-                longitude: restaurant.long,
+                latitude: 19.304419414867038,
+                longitude: -99.19007418666133,
                 latitudeDelta: 0.005,
                 longitudeDelta: 0.005
             }}
@@ -58,8 +58,8 @@ export default function DeliveryScreen() {
             mapType='mutedStandard'>
             <Marker
                 coordinate={{
-                    latitude: restaurant.lat,
-                    longitude: restaurant.long
+                    latitude: 19.304419414867038,
+                    longitude: -99.19007418666133
                 }}
                 title={restaurant.title}
                 description={restaurant.description}

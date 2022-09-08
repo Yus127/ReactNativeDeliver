@@ -25,7 +25,7 @@ export default function RestaurantCards({
         lat,     }   )
     }}
     
-    className="bg-white mr-3 shadow w-72">
+    className="bg-amber-50 mr-3 shadow w-72">
         <Image
         source={{
             uri: urlFor(imgUrl).url(),

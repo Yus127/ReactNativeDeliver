@@ -24,12 +24,10 @@ export default function BasketScreen() {
         setGroupItemsInBasket(groupItems);
     }, [items]);
 
-
-
     return (
         <SafeAreaView className="mt-5 flex-1 bg-white">
             <View className="flex-1 bg-gray-100">
-                <View className="p-5 borde-b border-[#FFC429] bg-white shadow-xs">
+                <View className="p-5 borde-b border-[#FFC429] bg-amber-50 shadow-xs">
                     <View>
                         <Text className="text-lg font-bold text-center">Basket</Text>
                         <Text className="text-center text-gray-400"> {restaurants.title}</Text>
@@ -54,7 +52,7 @@ export default function BasketScreen() {
                     {Object.entries(groupItemsInBasket).map(([key,items])=>(
                         <View
                             key={key}
-                        className="flex-row items-center space-x-3 bg-white py-2 px-5">
+                        className="flex-row items-center space-x-3 bg-amber-50 py-2 px-5">
                             <Text>{items.length}X</Text>
                             <Image
                                 source={{uri: urlFor(items[0]?.image).url()}}

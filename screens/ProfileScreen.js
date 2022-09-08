@@ -16,18 +16,18 @@ export default function ProfileScreen() {
 
             <View className="flex-box">
 
-                <Text className="text-lg font-bold text-center">Profile</Text>
+                <Text className="text-lg font-bold text-center bg-amber-50 p-6">Profile</Text>
             </View>
             <TouchableOpacity
                 onPress={navigation.goBack}
                 className="absolute top-2 left-3 p-2 bg-opacity-100 rounded-full">
-                <ArrowLeftIcon size={20} color="#FFC429"/>
+                <ArrowLeftIcon size={22} color="#FFC429"/>
             </TouchableOpacity>
             </View>
 
 
 
-            <View className="px-6 pt-8">
+            <View className="px-6 pt-4">
                 <View className="flex items-center">
 
                 <Image source={require('../assets/foto.png')}
@@ -35,7 +35,7 @@ export default function ProfileScreen() {
                 />
 
                 <Text className="mt-8"> <Text className="text-lg ">Name: </Text> Yusdivia Molina </Text>
-                <Text className="mt-4"><Text className="text-lg">Address: </Text> Somewhere over the rainbow </Text>
+                <Text className="mt-4"><Text className="text-lg">Address: </Text> Drexel, Missouri(MO), 64742 </Text>
                 <Text className="mt-4"><Text className="text-lg">Phone number:</Text> 12345678</Text>
                 <Text className="mt-4 mb-8"><Text className="text-lg">Email: </Text> A01653120@tec.mx</Text>
                     <View className="rounded-lg bg-[#FFC429] px-6">
